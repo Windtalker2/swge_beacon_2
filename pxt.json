@@ -9,7 +9,10 @@
     "files": [
         "main.blocks",
         "README.md",
-        "bluetooth.ts"
+        "bluetooth.ts",
+        "SwgeBeaconService.cpp",
+        "SwgeBeaconService.h",
+        "shims.d.ts"
     ],
     "testFiles": [
         "test.ts"
