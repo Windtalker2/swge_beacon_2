@@ -54,4 +54,44 @@ namespace bluetooth {
     export function activateGenericBeacon(mfr_id: string, beacon_data: string): void {
         return;
     }
+    /**
+ * Star Wars: Galaxy's Edge Beacon Service
+ */
+    //% color="#0059ff" weight=100 icon="\uf294" block="SWGE Beacon"
+    namespace bluetooth {
+
+        /**
+         * Activates the SWGE Location Beacon.
+         * @param zone The park zone (1-7), eg: 1
+         */
+        //% blockId=swge_activate_location
+        //% block="activate location beacon zone %zone"
+        //% zone.min=1 zone.max=7
+        //% shim=bluetooth::activateSwgeLocationBeacon
+        export function activateSwgeLocationBeacon(zone: number): void {
+            return;
+        }
+
+        /**
+         * Activates a Droid beacon.
+         * @param personality The droid personality (0-8), eg: 3
+         */
+        //% blockId=swge_activate_droid
+        //% block="activate droid beacon personality %personality"
+        //% personality.min=0 personality.max=8
+        //% shim=bluetooth::activateSwgeDroidBeacon
+        export function activateSwgeDroidBeacon(personality: number): void {
+            return;
+        }
+
+        /**
+         * Activates a generic beacon with hex data.
+         */
+        //% blockId=swge_activate_generic
+        //% block="activate generic beacon ID %mfr_id| data %beacon_data"
+        //% shim=bluetooth::activateGenericBeacon
+        export function activateGenericBeacon(mfr_id: string, beacon_data: string): void {
+            return;
+        }
+    }
 }
