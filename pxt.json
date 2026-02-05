@@ -8,8 +8,8 @@
     },
     "files": [
         "main.blocks",
-        "main.ts",
-        "README.md"
+        "README.md",
+        "bluetooth.ts"
     ],
     "testFiles": [
         "test.ts"
